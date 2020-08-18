@@ -842,6 +842,7 @@ spec:
     targetPort: 8089
   selector:
     app: datacatalog
+  type: LoadBalancer
 ---
 apiVersion: v1
 kind: Service
@@ -866,6 +867,7 @@ spec:
     targetPort: 8089
   selector:
     app: flyteadmin
+  type: LoadBalancer
 ---
 apiVersion: v1
 kind: Service
@@ -879,6 +881,7 @@ spec:
     targetPort: 8080
   selector:
     app: flyteconsole
+  type: LoadBalancer
 ---
 apiVersion: v1
 kind: Service
@@ -891,6 +894,7 @@ spec:
   - port: 9000
   selector:
     app: minio
+  type: LoadBalancer
 ---
 apiVersion: v1
 kind: Service
